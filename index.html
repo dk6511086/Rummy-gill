@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummy Gill - India's best Rummy App</title>
+    <meta name="keyword" content="Rummy Gill, Gill Rummy Download, Rummy, Rummy Gill Apk Download, Gill Rummy Download, Rummy Gill App">
+	<meta name="description" content="Rummy Gill is India's best popular rummy game on which you can earn real cash by playing rummy. If you want to play rummy. then you can download Rummy Gill Apk.">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <meta name="og:name" content="Rummy Gill"/>
+    <meta property="og:title" content="Rummy Gill" />
+    <meta property="og:description" content="Earn money by playing games at home with Rummy Gill App. If you are bored alone somewhere, you can use the Gill Rummy app for entertainment." />
+    <link href="index.html" />
+    <meta content="Rummy Gill" name="title"/>
+    <meta property="og:url" content="index.html" />
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="dk">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="warp">
+
+        <div class="main"> 
+        </div>
+        <div style="margin-top: 34rem;"><p style="color: rgb(179, 175, 175);font-size: .6rem;text-align: center;">Rummy Gill | Rummy Gill APK Download | Rummy Gill Download | <a href="https://rummymeta.net/">Gill Rummy Download </a>| Rummy Gill Apk | Rummy Glee Download | <a href="https://rummyadda.club/">Rummy Adda</a></p></div>
+
+        <img id="installbtn"  src="imgs/btn_down1.png" class="adcdfx dowmload-button animate__animated animate__pulse animate__infinite"
+            alt="Rummy Gill download">
+            
+        <div class="footer">
+            <div class="tip">
+                <img src="imgs/rummy-gill-apk.png" class="small-logo" alt="Rummy Gill App">
+                <div class="tip-content">
+                    <b class="bit-game">Rummy Gill App</b>
+                    <p class="subtitle">India's Best Rummy App</p>
+                </div>
+            </div>
+            <div id="downloadbtn" class="dowmload"> Download </div>
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return "";
+    }
+    var code = getQueryVariable("code")
+	var campaign = getQueryVariable("campaign")
+
+    function copyUrl(_sTxt) {
+        // content  
+        // 
+        const aux = document.createElement('input')
+        // 
+        const content = _sTxt;
+        // 
+        aux.setAttribute('value', content)
+        // 
+        document.body.appendChild(aux)
+        // 
+        aux.select()
+        // 
+        document.execCommand('copy')
+        // 
+        document.body.removeChild(aux)
+    }
+
+	function readyAdjust(code,campaign){
+		var img = new Image();
+		let url = "https://view.adjust.com/impression/XXXXXXX";
+		if (code != "")
+		  url  = url +"?label="+code;
+		else if (campaign != "")  
+		  url = url + "?campaign="+campaign;
+		if  (code != ""){
+		  img.src =url;
+		}
+		 
+	}
+	function downloadAdjust(code,campaign){
+	 var img = new Image();
+		let url = "https://app.adjust.com/XXXXXXXX";
+		if (code != "")
+		  url  = url +"?label="+code;
+		else if (campaign != "")  
+		  url = url + "?campaign="+campaign;
+	    if  (code != ""){
+		  if (!code.startsWith("c_"))
+		    code="r_"+code;
+		  copyUrl(code);
+		  img.src =url;
+		}
+	 if (isIOS()) {
+      window.location.href="https://d2agvnz7l4x4d6.cloudfront.net/cg/files/rpnk5c5r0hmc5ue0c9z8qby/Master_z5lome.apk?ss=custom_default";
+	  return false;
+     }
+	 const link = document.createElement("a");
+	 link.style.display = "none";
+	 link.href ="https://d2agvnz7l4x4d6.cloudfront.net/cg/files/rpnk5c5r0hmc5ue0c9z8qby/Master_z5lome.apk?ss=custom_default"
+	 link.download = "bg.apk"
+	 document.body.appendChild(link);
+	 link.click();
+	 document.body.removeChild(link);
+	}
+
+    function isIOS(){
+        var u = navigator.userAgent;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios
+        return isiOS;
+    }
+
+    button = document.getElementById("downloadbtn");
+    button.onclick = function() {
+        downloadAdjust(code,campaign);
+        return false;
+    }
+	
+    installbtn = document.getElementById("installbtn");
+    installbtn.onclick = function() {
+        downloadAdjust(code,campaign);
+        return false;
+    }
+ 
+    readyAdjust(code,campaign);  
+</script>
+</html>
